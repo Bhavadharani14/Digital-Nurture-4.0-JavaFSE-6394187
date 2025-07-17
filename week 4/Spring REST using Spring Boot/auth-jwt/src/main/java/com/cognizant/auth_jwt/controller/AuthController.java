@@ -23,7 +23,6 @@ public class AuthController {
         String username = credentials[0];
         String password = credentials[1];
 
-        // Validate credentials (hardcoded here)
         if ("user".equals(username) && "pwd".equals(password)) {
             String token = jwtUtil.generateToken(username);
             return ResponseEntity.ok(new AuthResponse(token));

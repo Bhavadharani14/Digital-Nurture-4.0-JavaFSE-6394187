@@ -14,7 +14,7 @@ public class SecurityConfig {
     public InMemoryUserDetailsManager userDetailsService() {
         return new InMemoryUserDetailsManager(
                 User.withUsername("user")
-                    .password("{noop}pwd")  // no password encoding
+                    .password("{noop}pwd")  
                     .roles("USER")
                     .build()
         );
@@ -28,7 +28,7 @@ public class SecurityConfig {
                 .requestMatchers("/authenticate").authenticated()
                 .anyRequest().permitAll()
             )
-            .httpBasic();  // enable basic auth
+            .httpBasic();  
 
         return http.build();
     }

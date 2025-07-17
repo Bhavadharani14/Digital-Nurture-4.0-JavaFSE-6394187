@@ -9,21 +9,18 @@
     <name>spring-core-learn</name>
 
     <dependencies>
-        <!-- Spring Context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.3.34</version>
         </dependency>
 
-        <!-- SLF4J API -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.36</version>
         </dependency>
 
-        <!-- SLF4J Console Logger -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
